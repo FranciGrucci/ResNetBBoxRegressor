@@ -136,17 +136,17 @@ def train_model(img_dir, label_dir):
     ])
 
     # Dataset con debug
-    #dataset = BBoxDataset(img_dir, label_dir, transform=transform, debug=True)
+    dataset = BBoxDataset(img_dir, label_dir, transform=transform, debug=True)
     # Crea il dataset completo
-    full_dataset = BBoxDataset(img_dir, label_dir, transform=transform)
+    #full_dataset = BBoxDataset(img_dir, label_dir, transform=transform)
     # Imposta la dimensione del subset (es. 100 campioni)
-    subset_size = 100
-    indices = list(range(len(full_dataset)))
-    random.shuffle(indices)
-    subset_indices = indices[:subset_size]
+    #subset_size = 100
+    #indices = list(range(len(full_dataset)))
+    #random.shuffle(indices)
+    #subset_indices = indices[:subset_size]
 
 # Crea il subset
-    dataset = Subset(full_dataset, subset_indices)
+    #dataset = Subset(full_dataset, subset_indices)
     dataloader = DataLoader(dataset, batch_size=BATCH_SIZE, shuffle=True, num_workers=4)
 
     # Modello
