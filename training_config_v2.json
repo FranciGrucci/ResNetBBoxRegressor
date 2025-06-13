@@ -1,0 +1,8 @@
+{
+  "img_size": 224,
+  "batch_size": 16,
+  "epochs": 20,
+  "learning_rate": 1e-05,
+  "weight_decay": 0.0001,
+  "best_loss": 0.8941041656902858
+}

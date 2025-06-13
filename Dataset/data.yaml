@@ -1,0 +1,12 @@
+names:
+- l_iris
+- l_pupil
+- r_iris
+- r_pupil
+nc: 4
+
+path: /home/francesca/Scrivania/mediapipe-eyetracker/Dataset/
+
+train: /home/francesca/Scrivania/ResNetBBoxRegressor/Dataset/images/train
+val: /home/francesca/Scrivania/ResNetBBoxRegressor/Dataset/images/val
+test: /home/francesca/Scrivania/ResNetBBoxRegressor/Dataset/images/test
