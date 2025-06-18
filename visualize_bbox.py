@@ -103,7 +103,7 @@ def visualize_predictions():
     # Percorsi
     img_dir = "/home/francesca/Scrivania/ResNetBBoxRegressor/Dataset/images/test"
     label_dir = "/home/francesca/Scrivania/ResNetBBoxRegressor/Dataset/labels/test"
-    model_path = "best_resnet_bbox_model.pth"  # Usa il modello migliore!
+    model_path = "final_resnet_bbox_model.pth"  # Usa il modello migliore!
     
     # Controlla se i percorsi esistono
     if not os.path.exists(img_dir):
